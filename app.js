@@ -13,7 +13,6 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   const password = generatePassword(req.body)
-  console.log(password)
   res.render('index', {password: password})
 })
 app.listen(port, () => {
